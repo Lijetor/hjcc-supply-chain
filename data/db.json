@@ -1,0 +1,685 @@
+{
+  "settings": {
+    "warehouseName": "灰鲸餐创·供应链系统",
+    "enterpriseName": ""
+  },
+  "warehouses": [
+    {
+      "id": "WH001",
+      "name": "冻货仓",
+      "type": "frozen",
+      "description": "冷冻海鲜、肉类食材",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "WH002",
+      "name": "蔬菜生鲜仓",
+      "type": "fresh",
+      "description": "生鲜蔬果、蛋类、豆腐",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "WH003",
+      "name": "物料仓",
+      "type": "materials",
+      "description": "主食、调味品、辅料、包装物料",
+      "createdAt": "2026-07-17 12:27"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "ACCDEV",
+      "phone": "13826406713",
+      "password": "$2b$08$Q7HfQ8ZLXJaEP8nSW0khCehWqWMmkqvuYMTnjVF4KXAb90bT3uaiu",
+      "role": "developer",
+      "name": "东方先生",
+      "storeId": null,
+      "warehouseId": null,
+      "enterpriseName": "",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "phone": "15374025558",
+      "password": "$2b$08$Kygw9Nfm58Y9kuLxPN5r6uvEt33cjlo7QoMSHZgsCMJjfSs6Myc3W",
+      "role": "admin",
+      "name": "杨建蓉",
+      "storeId": null,
+      "warehouseId": null,
+      "enterpriseName": "",
+      "id": "ACCMROGON6KHTP",
+      "createdAt": "2026-07-17 12:52"
+    }
+  ],
+  "applications": [],
+  "stores": [
+    {
+      "id": "ST004",
+      "name": "八肚幺·台湾卤肉饭保利水城店",
+      "type": "台湾卤肉饭",
+      "address": "佛山市南海区保利水城时光汇",
+      "phone": "15219829475",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ST002",
+      "name": "八肚幺·台湾卤肉饭客村店",
+      "type": "台湾卤肉饭",
+      "address": "广州市天河区客村",
+      "phone": "15219829475",
+      "createdAt": "2026-07-17 12:34"
+    },
+    {
+      "id": "ST001",
+      "name": "八肚幺东圃店",
+      "type": "台湾卤肉饭",
+      "address": "天河区东圃二马路",
+      "phone": "15374025558",
+      "createdAt": "2026-07-17 13:22"
+    }
+  ],
+  "ingredients": [
+    {
+      "id": "ING001",
+      "name": "三文鱼",
+      "category": "海鲜",
+      "unit": "kg",
+      "spec": "冰鲜整条",
+      "supplier": "挪威海产",
+      "referencePrice": 85,
+      "outboundPrice": 95,
+      "warningThreshold": 5,
+      "warehouseId": "WH001",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING002",
+      "name": "金枪鱼",
+      "category": "海鲜",
+      "unit": "kg",
+      "spec": "超低温",
+      "supplier": "远洋渔业",
+      "referencePrice": 120,
+      "outboundPrice": 132,
+      "warningThreshold": 3,
+      "warehouseId": "WH001",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING003",
+      "name": "北极贝",
+      "category": "海鲜",
+      "unit": "kg",
+      "spec": "冷冻",
+      "supplier": "大连海产",
+      "referencePrice": 65,
+      "outboundPrice": 72,
+      "warningThreshold": 2,
+      "warehouseId": "WH001",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING004",
+      "name": "甜虾",
+      "category": "海鲜",
+      "unit": "kg",
+      "spec": "冷冻",
+      "supplier": "北海道直采",
+      "referencePrice": 90,
+      "outboundPrice": 99,
+      "warningThreshold": 2,
+      "warehouseId": "WH001",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING005",
+      "name": "鳗鱼",
+      "category": "海鲜",
+      "unit": "kg",
+      "spec": "活鳗",
+      "supplier": "顺德养殖",
+      "referencePrice": 55,
+      "outboundPrice": 62,
+      "warningThreshold": 3,
+      "warehouseId": "WH001",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING017",
+      "name": "五花肉",
+      "category": "肉类",
+      "unit": "kg",
+      "spec": "冷鲜",
+      "supplier": "双汇",
+      "referencePrice": 32,
+      "outboundPrice": 38,
+      "warningThreshold": 5,
+      "warehouseId": "WH001",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING018",
+      "name": "鸡腿肉",
+      "category": "肉类",
+      "unit": "kg",
+      "spec": "冷鲜去骨",
+      "supplier": "温氏",
+      "referencePrice": 18,
+      "outboundPrice": 23,
+      "warningThreshold": 5,
+      "warehouseId": "WH001",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING014",
+      "name": "鸡蛋",
+      "category": "食材",
+      "unit": "盒",
+      "spec": "30枚/盒",
+      "supplier": "温氏蛋业",
+      "referencePrice": 18,
+      "outboundPrice": 22,
+      "warningThreshold": 3,
+      "warehouseId": "WH002",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING015",
+      "name": "黄瓜",
+      "category": "蔬菜",
+      "unit": "kg",
+      "spec": "新鲜",
+      "supplier": "本地菜场",
+      "referencePrice": 5,
+      "outboundPrice": 7,
+      "warningThreshold": 3,
+      "warehouseId": "WH002",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING016",
+      "name": "牛油果",
+      "category": "蔬菜",
+      "unit": "kg",
+      "spec": "墨西哥进口",
+      "supplier": "佳沛",
+      "referencePrice": 28,
+      "outboundPrice": 35,
+      "warningThreshold": 2,
+      "warehouseId": "WH002",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING019",
+      "name": "豆腐",
+      "category": "食材",
+      "unit": "盒",
+      "spec": "300g",
+      "supplier": "白玉豆腐",
+      "referencePrice": 4,
+      "outboundPrice": 6,
+      "warningThreshold": 5,
+      "warehouseId": "WH002",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING006",
+      "name": "越光米",
+      "category": "主食",
+      "unit": "kg",
+      "spec": "日本进口",
+      "supplier": "中粮粮油",
+      "referencePrice": 12,
+      "outboundPrice": 15,
+      "warningThreshold": 20,
+      "warehouseId": "WH003",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING007",
+      "name": "糯米",
+      "category": "主食",
+      "unit": "kg",
+      "spec": "东北圆粒",
+      "supplier": "中粮粮油",
+      "referencePrice": 8,
+      "outboundPrice": 11,
+      "warningThreshold": 15,
+      "warehouseId": "WH003",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING008",
+      "name": "海苔",
+      "category": "辅料",
+      "unit": "包",
+      "spec": "50片/包",
+      "supplier": "连云港海味",
+      "referencePrice": 25,
+      "outboundPrice": 30,
+      "warningThreshold": 5,
+      "warehouseId": "WH003",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING009",
+      "name": "酱油",
+      "category": "调味品",
+      "unit": "瓶",
+      "spec": "1.8L",
+      "supplier": "龟甲万",
+      "referencePrice": 35,
+      "outboundPrice": 40,
+      "warningThreshold": 3,
+      "warehouseId": "WH003",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING010",
+      "name": "芥末",
+      "category": "调味品",
+      "unit": "支",
+      "spec": "43g",
+      "supplier": "爱思必",
+      "referencePrice": 28,
+      "outboundPrice": 33,
+      "warningThreshold": 5,
+      "warehouseId": "WH003",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING011",
+      "name": "味淋",
+      "category": "调味品",
+      "unit": "瓶",
+      "spec": "500ml",
+      "supplier": "宝酒造",
+      "referencePrice": 22,
+      "outboundPrice": 27,
+      "warningThreshold": 3,
+      "warehouseId": "WH003",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING012",
+      "name": "清酒",
+      "category": "调味品",
+      "unit": "瓶",
+      "spec": "720ml",
+      "supplier": "菊正宗",
+      "referencePrice": 45,
+      "outboundPrice": 52,
+      "warningThreshold": 2,
+      "warehouseId": "WH003",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING013",
+      "name": "食用油",
+      "category": "调味品",
+      "unit": "桶",
+      "spec": "5L",
+      "supplier": "金龙鱼",
+      "referencePrice": 65,
+      "outboundPrice": 72,
+      "warningThreshold": 2,
+      "warehouseId": "WH003",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "id": "ING020",
+      "name": "天妇罗粉",
+      "category": "辅料",
+      "unit": "袋",
+      "spec": "1kg",
+      "supplier": "日清",
+      "referencePrice": 15,
+      "outboundPrice": 19,
+      "warningThreshold": 3,
+      "warehouseId": "WH003",
+      "createdAt": "2026-07-17 12:27"
+    },
+    {
+      "name": "员工餐五花肉",
+      "category": "肉类",
+      "unit": "斤",
+      "spec": "称重",
+      "supplier": "生鲜",
+      "referencePrice": 5.5,
+      "outboundPrice": 8.8,
+      "warningThreshold": 50,
+      "warehouseId": "WH002",
+      "id": "INGMROG9N8VQL0",
+      "createdAt": "2026-07-17 12:40"
+    }
+  ],
+  "warehouseInventory": [
+    {
+      "ingredientId": "ING001",
+      "quantity": 30,
+      "unit": "kg",
+      "warehouseId": "WH001",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING002",
+      "quantity": 15,
+      "unit": "kg",
+      "warehouseId": "WH001",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING003",
+      "quantity": 8,
+      "unit": "kg",
+      "warehouseId": "WH001",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING004",
+      "quantity": 12,
+      "unit": "kg",
+      "warehouseId": "WH001",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING005",
+      "quantity": 20,
+      "unit": "kg",
+      "warehouseId": "WH001",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING017",
+      "quantity": 25,
+      "unit": "kg",
+      "warehouseId": "WH001",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING018",
+      "quantity": 30,
+      "unit": "kg",
+      "warehouseId": "WH001",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING014",
+      "quantity": 25,
+      "unit": "盒",
+      "warehouseId": "WH002",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING015",
+      "quantity": 15,
+      "unit": "kg",
+      "warehouseId": "WH002",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING016",
+      "quantity": 10,
+      "unit": "kg",
+      "warehouseId": "WH002",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING019",
+      "quantity": 20,
+      "unit": "盒",
+      "warehouseId": "WH002",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING006",
+      "quantity": 80,
+      "unit": "kg",
+      "warehouseId": "WH003",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING007",
+      "quantity": 50,
+      "unit": "kg",
+      "warehouseId": "WH003",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING008",
+      "quantity": 30,
+      "unit": "包",
+      "warehouseId": "WH003",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING009",
+      "quantity": 15,
+      "unit": "瓶",
+      "warehouseId": "WH003",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING010",
+      "quantity": 20,
+      "unit": "支",
+      "warehouseId": "WH003",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING011",
+      "quantity": 10,
+      "unit": "瓶",
+      "warehouseId": "WH003",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING012",
+      "quantity": 5,
+      "unit": "瓶",
+      "warehouseId": "WH003",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING013",
+      "quantity": 8,
+      "unit": "桶",
+      "warehouseId": "WH003",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "ING020",
+      "quantity": 15,
+      "unit": "袋",
+      "warehouseId": "WH003",
+      "updatedAt": "2026-07-17 12:27"
+    },
+    {
+      "ingredientId": "INGMROG9N8VQL0",
+      "quantity": 0,
+      "unit": "斤",
+      "warehouseId": "WH002",
+      "updatedAt": "2026-07-17 12:40"
+    }
+  ],
+  "storeInventory": [],
+  "inboundOrders": [
+    {
+      "id": "IN20260717001",
+      "createdAt": "2026-07-17 08:30",
+      "supplier": "挪威海产",
+      "operator": "仓库管理员",
+      "status": "completed",
+      "warehouseId": "WH001",
+      "items": [
+        {
+          "ingredientId": "ING001",
+          "name": "三文鱼",
+          "quantity": 20,
+          "unit": "kg",
+          "price": 85,
+          "amount": 1700
+        },
+        {
+          "ingredientId": "ING004",
+          "name": "甜虾",
+          "quantity": 10,
+          "unit": "kg",
+          "price": 90,
+          "amount": 900
+        }
+      ],
+      "totalAmount": 2600,
+      "remark": "冻货仓常规补货"
+    }
+  ],
+  "outboundOrders": [
+    {
+      "id": "OUT20260717001",
+      "createdAt": "2026-07-17 10:00",
+      "storeId": "ST001",
+      "storeName": "御前十七·天河店",
+      "operator": "仓库管理员",
+      "status": "completed",
+      "warehouseId": "WH001",
+      "orderId": "ORD20260717001",
+      "items": [
+        {
+          "ingredientId": "ING001",
+          "name": "三文鱼",
+          "quantity": 5,
+          "unit": "kg",
+          "unitPrice": 95,
+          "amount": 475
+        }
+      ],
+      "totalAmount": 475,
+      "remark": "天河店冻货补货"
+    }
+  ],
+  "storeOrders": [
+    {
+      "id": "ORD20260717001",
+      "storeId": "ST001",
+      "storeName": "御前十七·天河店",
+      "warehouseId": "WH001",
+      "warehouseName": "冻货仓",
+      "createdAt": "2026-07-17 07:00",
+      "expectedDate": "2026-07-17",
+      "status": "dispatched",
+      "items": [
+        {
+          "ingredientId": "ING001",
+          "name": "三文鱼",
+          "quantity": 5,
+          "unit": "kg",
+          "unitPrice": 95,
+          "amount": 475,
+          "remark": ""
+        }
+      ],
+      "totalAmount": 475,
+      "remark": "冻货仓订单"
+    },
+    {
+      "id": "ORD20260717002",
+      "storeId": "ST001",
+      "storeName": "御前十七·天河店",
+      "warehouseId": "WH003",
+      "warehouseName": "物料仓",
+      "createdAt": "2026-07-17 07:00",
+      "expectedDate": "2026-07-17",
+      "status": "pending",
+      "items": [
+        {
+          "ingredientId": "ING006",
+          "name": "越光米",
+          "quantity": 10,
+          "unit": "kg",
+          "unitPrice": 15,
+          "amount": 150,
+          "remark": ""
+        }
+      ],
+      "totalAmount": 150,
+      "remark": "物料仓订单"
+    },
+    {
+      "id": "ORD20260717003",
+      "storeId": "ST002",
+      "storeName": "御前十七·番禺店",
+      "warehouseId": "WH001",
+      "warehouseName": "冻货仓",
+      "createdAt": "2026-07-17 07:30",
+      "expectedDate": "2026-07-17",
+      "status": "pending",
+      "items": [
+        {
+          "ingredientId": "ING002",
+          "name": "金枪鱼",
+          "quantity": 3,
+          "unit": "kg",
+          "unitPrice": 132,
+          "amount": 396,
+          "remark": ""
+        }
+      ],
+      "totalAmount": 396,
+      "remark": ""
+    }
+  ],
+  "deliveries": [
+    {
+      "id": "DEL20260717001",
+      "storeId": "ST001",
+      "storeName": "御前十七·天河店",
+      "orderId": "ORD20260717001",
+      "warehouseId": "WH001",
+      "warehouseName": "冻货仓",
+      "createdAt": "2026-07-17 09:30",
+      "status": "delivered",
+      "driver": "李师傅",
+      "vehicle": "粤A·88923",
+      "phone": "13800001111",
+      "items": [
+        {
+          "ingredientId": "ING001",
+          "name": "三文鱼",
+          "quantity": 5,
+          "unit": "kg"
+        }
+      ],
+      "currentLocation": null,
+      "remark": ""
+    }
+  ],
+  "receivingOrders": [
+    {
+      "id": "REC20260717001",
+      "storeId": "ST001",
+      "storeName": "御前十七·天河店",
+      "deliveryId": "DEL20260717001",
+      "warehouseId": "WH001",
+      "warehouseName": "冻货仓",
+      "createdAt": "2026-07-17 10:30",
+      "receiver": "天河店店长",
+      "status": "completed",
+      "items": [
+        {
+          "ingredientId": "ING001",
+          "name": "三文鱼",
+          "orderedQty": 5,
+          "deliveredQty": 5,
+          "acceptedQty": 5,
+          "rejectedQty": 0,
+          "rejectReason": "",
+          "unit": "kg"
+        }
+      ],
+      "remark": "验收合格"
+    }
+  ],
+  "warehouseChecks": [],
+  "storeChecks": [],
+  "consumptionRecords": [],
+  "deliveryTracks": []
+}
