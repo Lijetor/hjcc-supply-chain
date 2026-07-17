@@ -1,0 +1,10 @@
+node_modules/
+logs/
+*.log
+*.exe
+ecosystem.config.js
+keepalive.ps1
+auto-start.vbs
+start-system.bat
+qrcode.png
+qrcode_public.png
